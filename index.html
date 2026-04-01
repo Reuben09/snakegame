@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Snake Game with Lives</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🐍 3D Snake Game</h1>
+
+<!-- Start Screen -->
+<div id="startScreen">
+  <h2>Welcome!</h2>
+  <p>Use arrow keys or buttons to move</p>
+  <p>Eat fruit, avoid walls & obstacles</p>
+  <button id="startBtn">Start Game</button>
+</div>
+
+<!-- Game Info -->
+<div class="info">
+  <p id="score">Score: 0</p>
+  <p id="highScore">High Score: 0</p>
+  <p id="level">Level: 1</p>
+  <p id="lives">Lives: 3</p>
+</div>
+
+<canvas id="game" width="400" height="400"></canvas>
+
+<!-- Mobile Controls -->
+<div class="controls">
+  <button onclick="setDirection(0,-1)">Up</button>
+  <div>
+    <button onclick="setDirection(-1,0)">Left</button>
+    <button onclick="setDirection(1,0)">Right</button>
+  </div>
+  <button onclick="setDirection(0,1)">Down</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

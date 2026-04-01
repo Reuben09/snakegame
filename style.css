@@ -1,0 +1,63 @@
+body {
+  text-align: center;
+  font-family: Arial;
+  background: #111;
+  color: white;
+}
+
+canvas {
+  background: #111;
+  margin-top: 10px;
+  border: 2px solid white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Start Screen */
+#startScreen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #222;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#startBtn {
+  padding: 12px 20px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  background: lime;
+  color: black;
+  border-radius: 5px;
+}
+
+/* Info */
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Mobile Controls */
+.controls {
+  margin-top: 15px;
+}
+
+.controls button {
+  font-size: 16px;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: lime;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
